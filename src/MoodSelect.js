@@ -10,6 +10,7 @@ export const MoodSelect = () => {
                     <select>
                         <option>Select dropdown</option>
                         <option>With options</option>
+                        {/*map through moods*/}
                     </select>
                 </div>
             </div>
