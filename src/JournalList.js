@@ -1,39 +1,32 @@
+import { useState, useEffect } from "react";
+import { getAllJournalEntries } from "./APIManager";
+import { JournalEntry } from "./JournalEntry";
+
+
 export const JournalList = () => {
 
+    //how it used to be:
+    // const journalEntries = getAllJournalEntries()
 
+    const [journalEntries, setJournalEntries] = useState([])
+
+    useEffect(
+        () => {
+            getAllJournalEntries()
+                .then((journalArray) => {
+                    setJournalEntries(journalArray)
+                })
+        },
+        [] //where we observe state - if empty we are just watching intial component state
+    )
 
     return (
         <>
-            <article className="message">
-                <div className="message-header">
-                    <p>Journal Entry</p>
-                    <button className="delete" aria-label="delete"></button>
-                </div>
-                <div className="message-body">
-                  Journal Entry Goes Here
-                </div>
-            </article>
-
-            <article className="message">
-                <div className="message-header">
-                    <p>Journal Entry</p>
-                    <button className="delete" aria-label="delete"></button>
-                </div>
-                <div className="message-body">
-                  Journal Entry Goes Here
-                </div>
-            </article>
-
-            <article className="message">
-                <div className="message-header">
-                    <p>Journal Entry</p>
-                    <button className="delete" aria-label="delete"></button>
-                </div>
-                <div className="message-body">
-                  Journal Entry Goes Here
-                </div>
-            </article>
+            {
+                journalEntries.map((singleJournal) => <JournalEntry key={`journal--${singleJournal.id}`} singleJournal={singleJournal} />)
+            }
         </>
-
     )
+
+
 }

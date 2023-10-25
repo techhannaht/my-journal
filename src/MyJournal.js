@@ -15,10 +15,10 @@ export const MyJournal = () => {
             Tell me how you <strong> really </strong> feel.
           </p>
           <div className="columns">
-            <div class="column is-three-fifths">
+            <div className="column is-three-fifths">
               <JournalForm />
             </div>
-            <div class="column">
+            <div className="column">
               <Weather />
             </div>
           </div>
