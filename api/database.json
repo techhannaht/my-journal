@@ -36,6 +36,7 @@
     "journalEntries": [
         {
             "id": 1,
+            "title": "Title",
             "entryText": "lorum ispen",
             "dateTime": "2023-10-25",
             "moodId": 2,
@@ -43,6 +44,7 @@
         },
         {
             "id": 2,
+            "title": "Title",
             "entryText": "lorum ispen",
             "dateTime": "2023-10-26",
             "moodId": 2,
@@ -50,6 +52,7 @@
         },
         {
                 "id": 3,
+                "title": "Title",
                 "entryText": "lorum ispen",
                 "dateTime": "2023-10-27",
                 "moodId": 3,
