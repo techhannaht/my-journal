@@ -1,60 +1,66 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "email": "beanteam@gmail.com",
-            "password": "123",
-            "username": "beanteam00"
-        },
-        {
-            "id": 2,
-            "email": "frogteam@gmail.com",
-            "password": "456",
-            "username": "frogteam13"
-        },
-        {
-            "id": 3,
-            "email": "rats@gmail.com",
-            "password": "789",
-            "username": "frogteam13"
-        }
-    ],
-    "moods": [
-        {
-            "id": 1,
-            "name": "happy"
-        },
-        {
-            "id": 2,
-            "name": "sad"
-        },
-        {
-            "id": 3,
-            "name": "neutral"
-        }
-    ],
-    "journalEntries": [
-        {
-            "id": 1,
-            "entryText": "lorum ispen",
-            "dateTime": "2023-10-25",
-            "moodId": 2,
-            "userId": 1
-        },
-        {
-            "id": 2,
-            "entryText": "lorum ispen",
-            "dateTime": "2023-10-26",
-            "moodId": 2,
-            "userId": 2
-        },
-        {
-                "id": 3,
-                "entryText": "lorum ispen",
-                "dateTime": "2023-10-27",
-                "moodId": 3,
-                "userId": 3
-        }
-
-    ]
+  "users": [
+    {
+      "id": 1,
+      "email": "beanteam@gmail.com",
+      "password": "123",
+      "username": "beanteam00"
+    },
+    {
+      "id": 2,
+      "email": "frogteam@gmail.com",
+      "password": "456",
+      "username": "frogteam13"
+    },
+    {
+      "id": 3,
+      "email": "rats@gmail.com",
+      "password": "789",
+      "username": "frogteam13"
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "name": "happy"
+    },
+    {
+      "id": 2,
+      "name": "sad"
+    },
+    {
+      "id": 3,
+      "name": "neutral"
+    },
+    {
+      "name": "PUMPED",
+      "id": 4
+    }
+  ],
+  "journalEntries": [
+    {
+      "id": 1,
+      "title": "Title",
+      "entryText": "lorum ispen",
+      "dateTime": "2023-10-25",
+      "moodId": 2,
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "Title",
+      "entryText": "lorum ispen",
+      "dateTime": "2023-10-26",
+      "moodId": 2,
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "title": "Title",
+      "entryText": "lorum ispen",
+      "dateTime": "2023-10-27",
+      "moodId": 3,
+      "userId": 3
+    }
+  ]
 }
