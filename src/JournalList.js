@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getAllJournalEntries } from "../APIManager";
+import { getAllJournalEntries } from "./APIManager";
 import { JournalEntry } from "./JournalEntry";
 
 

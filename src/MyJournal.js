@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { JournalForm } from "./JournalForm"
 import { JournalList } from "./JournalList"
 import { Weather } from "./Weather"
-import { getAllJournalEntries } from "./APIManager"
+import {getAllJournalEntries} from "./APIManager"
 
 
 export const MyJournal = () => {
