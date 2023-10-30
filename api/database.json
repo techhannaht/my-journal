@@ -39,14 +39,6 @@
   ],
   "journalEntries": [
     {
-      "id": 1,
-      "title": "Title",
-      "entryText": "lorum ispen",
-      "dateTime": "2023-10-25",
-      "moodId": 2,
-      "userId": 1
-    },
-    {
       "id": 2,
       "title": "Title",
       "entryText": "lorum ispen",
