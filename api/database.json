@@ -41,7 +41,7 @@
     {
       "id": 2,
       "title": "Title",
-      "entryText": "lorum ispen",
+      "entryText": "lorum ispen !!",
       "dateTime": "2023-10-26",
       "moodId": 2,
       "userId": 2
@@ -49,10 +49,18 @@
     {
       "id": 3,
       "title": "Title",
-      "entryText": "lorum ispen",
+      "entryText": "lorum ispen !!",
       "dateTime": "2023-10-27",
       "moodId": 3,
       "userId": 3
+    },
+    {
+      "moodId": 4,
+      "userId": 1,
+      "id": 4,
+      "title": "Test",
+      "entryText": "WOOOOO!",
+      "dateTime": "2023-10-31"
     }
   ]
 }

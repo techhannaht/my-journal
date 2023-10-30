@@ -3,7 +3,7 @@ import { MoodSelect } from "./MoodSelect"
 // make journal entry component 
 
 //accept journal prop to create single entry
-export const JournalEntry = ({singleJournal, deleteJournalEntry}) => {
+export const JournalEntry = ({singleJournal, deleteJournalEntry, updateJournalState}) => {
 
 const [showForm, setShowForm] = useState(false)
 const [editJournal, setEditJournal] = useState({})
@@ -20,6 +20,25 @@ const handleControlledInputChange = (e) => {
 
   setEditJournal(newJournalEntry)
 }
+
+const UpdateEntry = (e) => {
+  e.preventDefault()
+
+  const entryToSend = {...editJournal}
+  entryToSend.moodId = +entryToSend.moodId
+
+  
+      fetch(`http://localhost:8088/journalEntries/${editJournal.id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(entryToSend),
+      }).then(r => r.json)
+      .then(updateJournalState)
+      .then(() => setShowForm(false))
+}
+
 
     return <>
     {!showForm ?
@@ -65,8 +84,8 @@ const handleControlledInputChange = (e) => {
       <p></p>
       <p></p>
       <input type="Date" name="dateTime" value={editJournal.dateTime}  onChange={handleControlledInputChange}/>
- <button className="edit" aria-label="edit" onClick={() => setShowForm(!showForm)}></button>
-  <button className="delete" aria-label="delete" onClick={() => deleteJournalEntry(singleJournal.id)}></button>
+ <button className="button is-small is-success"  onClick={(e) => UpdateEntry(e)}> Save </button>
+  <button className="button is-small is-danger" onClick={() => setShowForm(!showForm)}> Cancel </button>
 </div>
 <div className="message-body">
 <textarea name="entryText" className="textarea" placeholder="tell me about it ..." value={editJournal.entryText}  onChange={handleControlledInputChange}></textarea> 

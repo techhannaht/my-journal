@@ -50,7 +50,7 @@ export const MyJournal = () => {
                     <Weather  />
                 </div>
             </div>
-            <JournalList journalEntries={journalEntries} deleteJournalEntry={deleteJournalEntry}/>
+            <JournalList journalEntries={journalEntries} deleteJournalEntry={deleteJournalEntry} updateJournalState={updateJournalState}/>
     
     </div>
     </section>
