@@ -35,31 +35,39 @@
     {
       "name": "PUMPED",
       "id": 4
+    },
+    {
+      "name": "Tired",
+      "id": 5
+    },
+    {
+      "name": "scared lol",
+      "id": 6
     }
   ],
   "journalEntries": [
     {
       "id": 2,
-      "title": "Title",
-      "entryText": "lorum ispen !!",
-      "dateTime": "2023-10-26",
+      "title": "RIP Optimum",
+      "entryText": "My dogs ate my wifi....",
+      "dateTime": "2023-10-24",
       "moodId": 2,
       "userId": 2
     },
     {
       "id": 3,
-      "title": "Title",
-      "entryText": "lorum ispen !!",
+      "title": "#TIRED",
+      "entryText": "I biked for 30 minutes...",
       "dateTime": "2023-10-27",
-      "moodId": 3,
+      "moodId": 5,
       "userId": 3
     },
     {
-      "moodId": 4,
+      "moodId": 6,
       "userId": 1,
       "id": 4,
-      "title": "Test",
-      "entryText": "WOOOOO!",
+      "title": "What day is it?",
+      "entryText": "Feels like a Friday.... it's Tuesday.",
       "dateTime": "2023-10-31"
     }
   ]

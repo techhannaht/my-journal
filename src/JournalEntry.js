@@ -62,8 +62,8 @@ const UpdateEntry = (e) => {
      <div className="message-body">
      {singleJournal.entryText}
        </div>
-       <div>Mood: {singleJournal.moodId}</div>
-       <div>User: {singleJournal.userId}</div>
+       <div>Mood: {singleJournal.mood.name}</div>
+       <div>User: {singleJournal.user.username}</div>
  
       
      
